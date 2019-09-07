@@ -1,0 +1,396 @@
+
+body{display: grid;}
+footer{text-align: center;font-size: 15px;}
+footer a{text-decoration: none;color: blue;}
+footer a:hover{border-bottom: 3px double black;}
+.dropbtn {
+  background-color: #002254;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;}
+.dropbtn:hover, .dropbtn:focus {background-color: #ff8a7d;}
+.dropdown {position: relative;display: inline-block;}
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  border-radius: 7px;
+  min-width: 180px;
+  overflow: auto;
+  box-shadow: 5px 8px 16px 4px rgba(0,0,0,0.8);
+  z-index: 1;}
+.drop-content a {
+  color: #002254;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;}
+.dropdown a:hover {color: #1352c9;text-decoration: underline;}
+.show {display: block;}
+h1{font-size: 65px;background: -webkit-linear-gradient(right, #4b92a9, #edebeb);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+h2{font-size: 20px;}
+h4{font-size: 25px;}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;}
+.textmiddle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)}
+.textmiddle2{
+    position: absolute;
+    top:65%;
+    left:50%;
+    transform: translate(-50%,-50%);}
+ /* comment: why need translate here*/
+body {
+	margin: 0;
+    top:0;}
+body,
+button{
+	font-family: 'Georgia', 'Helvetica', 'Arial', sans-serif;
+	line-height: 1.5;
+  background-color: rgba(186,228,242,0.1);}
+
+figure {margin: 0;}
+.content-title{
+  font-family: courier;
+  font-size: 40px;
+  margin-top: 20px;}
+
+.submitbutton{
+  align-items: left;
+  display: grid;
+  grid-column: 2/3;
+  display: unset;}
+.content-button1 {
+    background: green;
+    border:1px solid green;
+    font-size: 18px;
+    margin: 0 auto;
+	padding: .5em 1em;
+    border-radius: 5em;
+	font-weight: 800;}
+.content-button1{
+    text-decoration: none;
+    color: white;}
+.content-button1:hover {color:black;}
+.content-button2 {
+    background: #002354fa;
+    border:2px solid #002354fa;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    padding: .5em 1em;
+    border-radius: 5em;
+    font-weight: 800;}
+.content-button2 a {
+    text-decoration: none;
+    color: white;}
+.content-button2:hover {border: 2px solid #ff8a7d;}
+figcaption{padding-left:2em;
+padding-right: 2em;}
+h1,
+h2,
+h3,p {
+	text-align: center;
+    display: block;
+	margin: 0;
+	padding: 1em 0;}
+img {
+	display: block;
+	 border: 0;
+    width: 100%;
+	height: auto;}
+
+.menubar {
+    padding: 0;
+    background-color: #002254;}
+.menu {
+	padding: 1em 2em;
+	background-color: #002254;
+  font-size: 20px;
+}
+.menu ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+	 list-style-type: none;}
+.menu a {
+    padding:.8em 1em;
+    border: 2px solid white;
+    border-radius: 14px;
+    margin: 0.3em;
+    color: white;
+    text-decoration: none;}
+.menu a:focus,
+.menu a:hover {
+        color: white;
+        border:2px solid #ff8a7d;}
+
+
+
+@media screen and (min-width: 690px) {
+
+.main-pitch{
+
+  overflow: hidden;
+    display: grid;
+    margin: 20px;
+    grid-template-areas: 
+    "r1 r2 r3";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;}
+.reason1, .reason2, .reason3{
+      box-shadow: 10px 17px 11px 0px grey;}
+.reason1 {
+    grid-area: r1;
+    margin:2em;
+    padding-bottom: 2em;
+    background-color: #6973f291;}
+.reason2{
+    grid-area: r2;
+     margin:2em;
+    padding-bottom: 2em;
+    background-color: #f9dc62de;}
+.reason3{
+    grid-area: r3;
+    margin: 2em;
+    padding-bottom: 2em;
+    background-color: #b628ab94;}
+.twocolumn{
+    display: grid;
+    grid-template-areas: 
+    "r4 r5"
+    "w1 w1"
+    "c1 c1";
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;}
+.reason4{
+    grid-area: r4;
+    margin-left: 3em;
+    padding-bottom: 2em;
+background-color: #e5dada;}
+.reason5{
+  grid-area: r5;
+  margin-right: 3em;
+  padding-bottom: 2em;
+  background-color: #5956bc57;
+}
+.details{
+  margin-top:40px;
+  margin-bottom: 30px;
+  background-image: url("stairsok.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+  grid-area: w1;
+  text-align: center;}
+
+.details h2 {
+  color: black;
+  font-size: 35px;
+  margin-top: 20px;}
+
+.details p {
+  color: #0f4fe9;
+  font-size: 33px;
+margin-bottom: 30px;}
+.more-content{
+  grid-area: c1;
+  margin-top: 6%;
+  padding-bottom: 2em;
+  background-image: url("call3.jpg");
+  background-color:grey;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;}
+
+.feature {
+        width: 100%;
+        margin: 0;
+    }
+form{
+  font-family: courier;
+  color:black;
+  display: grid;
+  grid-template-columns: 285px 1fr;
+  grid-gap: 10px;
+}
+label{
+  grid-column: 1/2;
+  text-align: right;
+  padding: 10px;
+  margin: 5px;
+}
+
+input,select,textarea{
+  grid-column: 2/3;
+  width: 80%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 6px 3px rgba(0,0,0,0.5);
+  margin: 10px;
+  resize: vertical;
+}
+.dropdown, .dropbtn, .drop-content{
+    display: none;
+  };
+}
+
+@media screen and (max-width:990px){
+  .reason1, .reason2, .reason3{
+    margin: 0;
+  }
+  .details p{
+    font-size:25px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 690px){
+  nav{
+    display: none;
+  }
+  h1{
+    font-size: 50px;
+  }
+  .textmiddle2{
+    font-size:18px;
+    }
+    .main-pitch{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "r1 r1"
+    "r2 r2"
+    "r3 r3";
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr ;}
+.reason1{
+   grid-area: r1;
+    margin:2em;
+    padding-bottom: 2em;
+    background-image: url("firstshot.png");
+    background-size: 100%;}
+.reason2{
+    grid-area: r2;
+     margin:2em;
+    padding-bottom: 2em;
+    background-image: url("secondshot.png");
+    background-size:100%; }
+.reason3{
+    grid-area: r3;
+    margin: 2em;
+    padding-bottom: 2em;
+    background-image: url("thirdshots.png");
+    background-size: 100%;}
+  .main-pitch img, 
+  .main-pitch p{
+      display: none;
+    }
+    .main-pitch button{
+      display: flex;
+    }
+.twocolumn{
+    display: grid;
+    grid-template-areas: 
+    "r4 r5"
+    "w1 w1"
+    "c1 c1"    ;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;}
+.reason4{
+    grid-area: r4;
+    margin-left: 3em;
+    padding-bottom: 2em;
+background-color: #e5dada;}
+.content-title{
+   font-size:27px;}
+
+  figcaption p{
+    padding:0px;
+  } 
+.reason5{
+  grid-area: r5;
+  margin-right: 3em;
+  padding-bottom: 2em;
+  background-color: #5956bc57;
+}
+.details{
+  margin-top:34px;
+  margin-bottom: -34px;
+  background-image: url("stairsok.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+  grid-area: w1;
+  text-align: center;}
+
+.details h2 {
+  color: black;
+  font-size: 25px;
+  margin-top: 20px;}
+.details p {
+  color: #0f4fe9;
+  font-size: 18px;
+margin-bottom: 23px;}
+.more-content{
+  grid-area: c1;
+  margin-top: 6%;
+  padding-bottom: 2em;
+  background-image: url("call3.jpg");
+  background-color:grey;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;}
+
+.feature {
+        width: 100%;
+        margin: 0;}
+form{
+  font-family: courier;
+  display: block;
+}
+label{
+  text-align: left;
+  padding: 10px;
+  margin: 7px;
+}
+
+input,select,textarea{
+  width: 90%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 7px;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 6px 3px rgba(0,0,0,0.5);
+  margin: 10px;
+  resize: vertical;
+}
+
+
+}
+
+
+
